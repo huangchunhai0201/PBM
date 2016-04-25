@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link href="stylesheets/works.css" rel="stylesheet">
+    <script src="jquery-1.12.3.js"></script>
+</head>
+<body>
+<script>
+    $(document).ready(function() {
+        $.ajax({
+            url: "/users/queryAll",
+            cache: false,
+            success: function(data) {
+                console.info(data)
+            }
+        });
+    });
+</script>
+</body>
+</html>
